@@ -1,0 +1,61 @@
+
+import { Category, Question } from '../types';
+
+export const QUESTION_DATABASE: Question[] = [
+  // --- FUTEBOL ANGOLANO (GIRABOLA & PALANCAS) ---
+  { id: 'ang-1', category: Category.ANGOLAN_FOOTBALL, question: 'Quem marcou o primeiro golo de Angola num Mundial (2006)?', options: ['Akwá', 'Flávio Amado', 'Mantorras', 'Figueiredo'], correctAnswer: 'Flávio Amado', explanation: 'Flávio marcou de cabeça contra o Irão.' },
+  { id: 'ang-2', category: Category.ANGOLAN_FOOTBALL, question: 'Qual clube tem mais títulos do Girabola?', options: ['Petro de Luanda', '1º de Agosto', 'Interclube', 'Sagrada Esperança'], correctAnswer: 'Petro de Luanda', explanation: 'O Petro é o recordista de troféus em Angola.' },
+  { id: 'ang-3', category: Category.ANGOLAN_FOOTBALL, question: 'Qual é a alcunha oficial da Seleção de Angola?', options: ['Leões Indomáveis', 'Águias Negras', 'Palancas Negras', 'Mambas'], correctAnswer: 'Palancas Negras', explanation: 'Inspirado na rara Palanca Negra Gigante.' },
+  { id: 'ang-4', category: Category.ANGOLAN_FOOTBALL, question: 'Onde foi realizado o CAN 2010?', options: ['Gana', 'Angola', 'Gabão', 'Egito'], correctAnswer: 'Angola', explanation: 'Angola organizou a prova em Luanda, Benguela, Cabinda e Lubango.' },
+  { id: 'ang-5', category: Category.ANGOLAN_FOOTBALL, question: 'Quem é o maior goleador da história das Palancas Negras?', options: ['Akwá', 'Flávio Amado', 'Gelson Dala', 'Manucho'], correctAnswer: 'Akwá', explanation: 'Fabrice Maieco "Akwá" é o maior artilheiro de sempre.' },
+  { id: 'ang-6', category: Category.ANGOLAN_FOOTBALL, question: 'Qual clube angolano joga no Estádio do Buraco?', options: ['Académica do Lobito', 'Desportivo da Huíla', 'Wiliete', 'Santa Rita'], correctAnswer: 'Académica do Lobito', explanation: 'O "Buraco" é a mística casa da Académica em Benguela.' },
+  { id: 'ang-7', category: Category.ANGOLAN_FOOTBALL, question: 'Em que clube Manucho Gonçalves jogou em Inglaterra?', options: ['Chelsea', 'Manchester United', 'Arsenal', 'Liverpool'], correctAnswer: 'Manchester United', explanation: 'O avançado foi contratado por Sir Alex Ferguson em 2008.' },
+  { id: 'ang-8', category: Category.ANGOLAN_FOOTBALL, question: 'Qual é a cor principal do equipamento do Interclube?', options: ['Amarelo', 'Azul', 'Vermelho', 'Verde'], correctAnswer: 'Azul', explanation: 'O clube da polícia veste tradicionalmente de azul.' },
+  { id: 'ang-9', category: Category.ANGOLAN_FOOTBALL, question: 'Quem era o treinador de Angola no Mundial 2006?', options: ['Mário Oliveira', 'Oliveira Gonçalves', 'Hervé Renard', 'Pedro Gonçalves'], correctAnswer: 'Oliveira Gonçalves', explanation: 'Oliveira Gonçalves liderou a "Geração de Ouro".' },
+  { id: 'ang-10', category: Category.ANGOLAN_FOOTBALL, question: 'O Kabuscorp do Palanca já teve qual estrela mundial?', options: ['Pato', 'Rivaldo', 'Ronaldinho', 'Eto\'o'], correctAnswer: 'Rivaldo', explanation: 'O craque brasileiro Rivaldo jogou no Kabuscorp em 2012.' },
+  { id: 'ang-11', category: Category.ANGOLAN_FOOTBALL, question: 'Qual destes clubes é conhecido como os "Militares"?', options: ['Petro de Luanda', '1º de Agosto', 'Interclube', 'Progresso'], correctAnswer: '1º de Agosto', explanation: 'O clube é ligado às Forças Armadas Angolanas.' },
+  { id: 'ang-12', category: Category.ANGOLAN_FOOTBALL, question: 'Em que província joga o Sagrada Esperança?', options: ['Lunda Norte', 'Lunda Sul', 'Moxico', 'Bié'], correctAnswer: 'Lunda Norte', explanation: 'O clube diamantífero tem sede no Dundo.' },
+
+  // --- MUNDIAIS & INTERNACIONAL ---
+  { id: 'int-1', category: Category.WORLD_CUP, question: 'Quem venceu o Mundial de 2022?', options: ['França', 'Marrocos', 'Argentina', 'Brasil'], correctAnswer: 'Argentina', explanation: 'A Argentina de Messi venceu a França nos penáltis.' },
+  { id: 'int-2', category: Category.EUROPEAN_LEAGUES, question: 'Qual clube venceu mais Champions Leagues?', options: ['Milan', 'Bayern', 'Real Madrid', 'Barcelona'], correctAnswer: 'Real Madrid', explanation: 'O Real Madrid é o rei absoluto da Europa.' },
+  { id: 'int-3', category: Category.LEGENDS, question: 'Qual era a nacionalidade de Eusébio?', options: ['Angolano', 'Português', 'Cabo-verdiano', 'Brasileiro'], correctAnswer: 'Português', explanation: 'Nasceu em Moçambique mas representou a Seleção de Portugal.' },
+  { id: 'int-4', category: Category.WORLD_CUP, question: 'Quantos mundiais tem o Brasil?', options: ['3', '4', '5', '6'], correctAnswer: '5', explanation: 'O Brasil é o único Pentacampeão mundial.' },
+  { id: 'int-5', category: Category.RECORDS_STATS, question: 'Quem marcou mais golos em fases finais de Mundiais?', options: ['Ronaldo Nazário', 'Miroslav Klose', 'Pelé', 'Fontaine'], correctAnswer: 'Miroslav Klose', explanation: 'O alemão Klose tem 16 golos em mundiais.' },
+  { id: 'int-6', category: Category.STADIUMS, question: 'Em que cidade fica o estádio San Siro?', options: ['Roma', 'Milão', 'Turim', 'Nápoles'], correctAnswer: 'Milão', explanation: 'Casa dos gigantes AC Milan e Inter.' },
+  { id: 'int-7', category: Category.EUROPEAN_LEAGUES, question: 'Quem é conhecido como "The Special One"?', options: ['Guardiola', 'Klopp', 'José Mourinho', 'Ancelotti'], correctAnswer: 'José Mourinho', explanation: 'Alcunha dada por si próprio ao chegar ao Chelsea.' },
+  { id: 'int-8', category: Category.LEGENDS, question: 'Qual jogador tem mais Bolas de Ouro?', options: ['Cristiano Ronaldo', 'Lionel Messi', 'Luka Modric', 'Cruyff'], correctAnswer: 'Lionel Messi', explanation: 'Messi lidera o ranking histórico da France Football.' },
+  { id: 'int-9', category: Category.WORLD_CUP, question: 'Qual país sediou o Mundial de 2010?', options: ['Espanha', 'África do Sul', 'Alemanha', 'Brasil'], correctAnswer: 'África do Sul', explanation: 'Foi o primeiro mundial no continente africano.' },
+  { id: 'int-10', category: Category.RECORDS_STATS, question: 'Qual é o tempo regulamentar de um jogo de futebol?', options: ['80 min', '90 min', '100 min', '45 min'], correctAnswer: '90 min', explanation: 'Excluindo o tempo de descontos e prolongamento.' },
+
+  // --- LENDAS ---
+  { id: 'leg-1', category: Category.LEGENDS, question: 'Qual era a alcunha de Pelé?', options: ['O Imperador', 'O Fenómeno', 'O Rei', 'O Bruxo'], correctAnswer: 'O Rei', explanation: 'Pelé é universalmente reconhecido como o Rei do Futebol.' },
+  { id: 'leg-2', category: Category.LEGENDS, question: 'Diego Maradona brilhou em qual clube italiano?', options: ['Juventus', 'Milan', 'Nápoles', 'Inter'], correctAnswer: 'Nápoles', explanation: 'Maradona é um Deus na cidade de Nápoles.' },
+  { id: 'leg-3', category: Category.LEGENDS, question: 'Cristiano Ronaldo começou em qual clube?', options: ['Real Madrid', 'Man. United', 'Sporting CP', 'Benfica'], correctAnswer: 'Sporting CP', explanation: 'Formado na academia de Alcochete.' },
+  { id: 'leg-4', category: Category.LEGENDS, question: 'Qual destes jogadores nunca venceu uma Bola de Ouro?', options: ['Ronaldinho', 'Kaká', 'Neymar', 'Modric'], correctAnswer: 'Neymar', explanation: 'Até hoje, Neymar nunca conquistou o prémio máximo individual.' },
+  { id: 'leg-5', category: Category.LEGENDS, question: 'Zinedine Zidane era famoso por qual número na França?', options: ['7', '9', '10', '5'], correctAnswer: '10', explanation: 'O maestro usava a 10 nos Bleus.' },
+
+  // --- ADICIONANDO VARIEDADE PARA VOLUME ---
+  { id: 'v-1', category: Category.RECORDS_STATS, question: 'Qual seleção venceu o Euro 2016?', options: ['França', 'Alemanha', 'Portugal', 'Espanha'], correctAnswer: 'Portugal', explanation: 'Venceram a anfitriã França com golo de Éder.' },
+  { id: 'v-2', category: Category.STADIUMS, question: 'Onde fica o Estádio de Wembley?', options: ['Liverpool', 'Manchester', 'Londres', 'Birmingham'], correctAnswer: 'Londres', explanation: 'O templo do futebol inglês.' },
+  { id: 'v-3', category: Category.EUROPEAN_LEAGUES, question: 'Qual clube joga em Anfield?', options: ['Everton', 'Liverpool', 'Arsenal', 'Chelsea'], correctAnswer: 'Liverpool', explanation: '"You\'ll Never Walk Alone" é o seu hino.' },
+  { id: 'v-4', category: Category.WORLD_CUP, question: 'Quem foi o melhor marcador do Mundial 2002?', options: ['Klose', 'Ronaldo Nazário', 'Rivaldo', 'Raúl'], correctAnswer: 'Ronaldo Nazário', explanation: 'O Fenómeno marcou 8 golos, incluindo dois na final.' },
+  { id: 'v-5', category: Category.ANGOLAN_FOOTBALL, question: 'O Recreativo do Libolo joga em qual vila?', options: ['Calulo', 'Gabela', 'Waku Kungo', 'Sumbe'], correctAnswer: 'Calulo', explanation: 'O Libolo fez história a partir da vila de Calulo.' },
+  { id: 'v-6', category: Category.ANGOLAN_FOOTBALL, question: 'Qual foi o último clube de Akwá em Angola?', options: ['Petro', '1º de Agosto', 'Benfica de Luanda', 'ASA'], correctAnswer: 'Petro', explanation: 'Akwá terminou a carreira no clube do Catetão.' },
+  { id: 'v-7', category: Category.ANGOLAN_FOOTBALL, question: 'Quantos CANs Angola organizou?', options: ['1', '2', '3', '0'], correctAnswer: '1', explanation: 'Até agora, apenas o histórico CAN 2010.' },
+  { id: 'v-8', category: Category.STADIUMS, question: 'O Estádio da Luz pertence a qual clube?', options: ['Sporting', 'Benfica', 'Porto', 'Braga'], correctAnswer: 'Benfica', explanation: 'É o maior estádio de Portugal.' },
+  { id: 'v-9', category: Category.EUROPEAN_LEAGUES, question: 'Quem treina o Manchester City em 2024?', options: ['Klopp', 'Arteta', 'Pep Guardiola', 'Ten Hag'], correctAnswer: 'Pep Guardiola', explanation: 'O catalão domina a Premier League há anos.' },
+  { id: 'v-10', category: Category.LEGENDS, question: 'Qual jogador é conhecido como "El Pibe de Oro"?', options: ['Messi', 'Maradona', 'Kempes', 'Valderrama'], correctAnswer: 'Maradona', explanation: 'Alcunha eterna de Diego Armando Maradona.' },
+  { id: 'v-11', category: Category.RECORDS_STATS, question: 'Quantos jogadores entram em campo por equipa?', options: ['10', '11', '12', '9'], correctAnswer: '11', explanation: 'O básico do futebol 11.' },
+  { id: 'v-12', category: Category.WORLD_CUP, question: 'Qual seleção venceu o primeiro Mundial (1930)?', options: ['Brasil', 'Argentina', 'Uruguai', 'Itália'], correctAnswer: 'Uruguai', explanation: 'O Uruguai venceu em casa a primeira edição.' },
+  { id: 'v-13', category: Category.ANGOLAN_FOOTBALL, question: 'Qual é o nome do estádio do 1º de Agosto?', options: ['França Ndalu', 'Cidadela', '22 de Junho', 'Macaquinho'], correctAnswer: 'França Ndalu', explanation: 'O novo complexo desportivo do clube militar.' },
+  { id: 'v-14', category: Category.LEGENDS, question: 'Quem é o "Pequeno Genial" angolano?', options: ['Akwá', 'Mantorras', 'Mendonça', 'Gilberto'], correctAnswer: 'Mantorras', explanation: 'Pedro Mantorras, ídolo eterno do Benfica e Angola.' },
+  { id: 'v-15', category: Category.STADIUMS, question: 'Onde fica a mística "Bombonera"?', options: ['Brasil', 'Argentina', 'Chile', 'Colômbia'], correctAnswer: 'Argentina', explanation: 'Estádio do Boca Juniors em Buenos Aires.' },
+  { id: 'v-16', category: Category.EUROPEAN_LEAGUES, question: 'Qual clube venceu a Champions 2023?', options: ['Real Madrid', 'Man. City', 'Inter', 'Bayern'], correctAnswer: 'Man. City', explanation: 'Venceram o Inter na final com golo de Rodri.' },
+  { id: 'v-17', category: Category.RECORDS_STATS, question: 'Qual a distância de um penálti?', options: ['9 metros', '10 metros', '11 metros', '12 metros'], correctAnswer: '11 metros', explanation: 'A marca fatal fica a 11 metros da baliza.' },
+  { id: 'v-18', category: Category.ANGOLAN_FOOTBALL, question: 'O Sagrada Esperança joga de qual cor?', options: ['Verde', 'Amarelo', 'Azul', 'Branco'], correctAnswer: 'Verde', explanation: 'O clube da Lunda é conhecido pelos seus equipamentos verdes.' },
+  { id: 'v-19', category: Category.LEGENDS, question: 'Johan Cruyff é lenda de qual país?', options: ['Alemanha', 'Países Baixos', 'Bélgica', 'Áustria'], correctAnswer: 'Países Baixos', explanation: 'O pai do "Futebol Total".' },
+  { id: 'v-20', category: Category.WORLD_CUP, question: 'Em que ano a França venceu o seu 1º mundial?', options: ['1994', '1998', '2002', '1986'], correctAnswer: '1998', explanation: 'Venceram o Brasil por 3-0 na final em Paris.' }
+  
+  // O sistema irá baralhar estas e as geradas via AI para totalizar as 400+ variações.
+];
